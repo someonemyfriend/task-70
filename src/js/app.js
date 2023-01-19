@@ -9,16 +9,10 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-let tryToGetElement = document.getElementsByClassName("main");
-console.log(tryToGetElement);
+let imageScale = document.querySelector(".image").addEventListener("click", scaleImage);;
 
-let tryToCreateDiv = document.createElement('div');
-tryToCreateDiv.classList.add('image');
-console.log(tryToCreateDiv);
-
-let tryToCreateImage = document.createElement("img");
-tryToCreateImage.src = "https://picsum.photos/200/301";
-tryToCreateDiv.appendChild(tryToCreateImage);
-
-
+function scaleImage() {
+  document.getElementById("myImage").style.width = "150%";
+  document.getElementById("myImage").style.height = "150%";
+}
 
